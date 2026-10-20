@@ -1,0 +1,158 @@
+:root {
+	color-scheme: light;
+	--ink: #1c1915;
+	--muted: #6b6258;
+	--line: #e4dcd2;
+	--paper: #f6f1ea;
+	--card: #fffdf9;
+	--accent: #9a3412;
+	--accent-ink: #fff7ed;
+	--danger: #9f1239;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	min-height: 100vh;
+	font-family: Georgia, "Iowan Old Style", "Palatino Linotype", serif;
+	color: var(--ink);
+	background: var(--paper);
+}
+
+main {
+	width: min(720px, calc(100% - 2rem));
+	margin: 0 auto;
+	padding: 3rem 0 4rem;
+}
+
+.eyebrow {
+	margin: 0 0 0.25rem;
+	font-family: "Segoe UI", sans-serif;
+	font-size: 0.75rem;
+	letter-spacing: 0.14em;
+	text-transform: uppercase;
+	color: var(--muted);
+}
+
+h1 {
+	margin: 0 0 1.5rem;
+	font-size: 2.5rem;
+	font-weight: 500;
+}
+
+h2 {
+	margin: 0 0 1rem;
+	font-size: 1.15rem;
+	font-weight: 500;
+}
+
+form,
+li {
+	background: var(--card);
+	border: 1px solid var(--line);
+	border-radius: 12px;
+}
+
+form {
+	padding: 1.25rem;
+	margin-bottom: 2rem;
+}
+
+label {
+	display: block;
+	margin-bottom: 0.9rem;
+	font-family: "Segoe UI", sans-serif;
+	font-size: 0.85rem;
+	color: var(--muted);
+}
+
+input,
+textarea {
+	display: block;
+	width: 100%;
+	margin-top: 0.35rem;
+	padding: 0.65rem 0.75rem;
+	border: 1px solid var(--line);
+	border-radius: 8px;
+	font: inherit;
+	color: var(--ink);
+	background: #fff;
+}
+
+textarea {
+	resize: vertical;
+}
+
+.actions {
+	display: flex;
+	gap: 0.5rem;
+}
+
+button {
+	font-family: "Segoe UI", sans-serif;
+	font-size: 0.9rem;
+	border-radius: 8px;
+	border: 1px solid transparent;
+	padding: 0.55rem 0.9rem;
+	cursor: pointer;
+}
+
+#save {
+	background: var(--accent);
+	color: var(--accent-ink);
+}
+
+#cancel,
+.edit,
+.delete {
+	background: transparent;
+	border-color: var(--line);
+	color: var(--ink);
+}
+
+.delete {
+	color: var(--danger);
+}
+
+.error {
+	margin: 0 0 0.8rem;
+	color: var(--danger);
+	font-family: "Segoe UI", sans-serif;
+	font-size: 0.9rem;
+}
+
+.empty {
+	color: var(--muted);
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: grid;
+	gap: 0.75rem;
+}
+
+li {
+	padding: 1rem 1.1rem;
+}
+
+li h3 {
+	margin: 0 0 0.35rem;
+	font-size: 1.15rem;
+	font-weight: 500;
+}
+
+li p {
+	margin: 0;
+	white-space: pre-wrap;
+}
+
+.row-actions {
+	display: flex;
+	gap: 0.4rem;
+	margin-top: 0.8rem;
+}

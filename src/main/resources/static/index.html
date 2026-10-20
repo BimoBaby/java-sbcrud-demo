@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Notes</title>
+	<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+	<main>
+		<header>
+			<p class="eyebrow">Demo</p>
+			<h1>Notes</h1>
+		</header>
+
+		<form id="note-form">
+			<h2 id="form-heading">New note</h2>
+			<label>
+				Title
+				<input id="title" name="title" type="text" maxlength="200" required autocomplete="off">
+			</label>
+			<label>
+				Body
+				<textarea id="body" name="body" maxlength="5000" rows="5"></textarea>
+			</label>
+			<p id="form-error" class="error" hidden></p>
+			<div class="actions">
+				<button type="submit" id="save">Save</button>
+				<button type="button" id="cancel" hidden>Cancel</button>
+			</div>
+		</form>
+
+		<section>
+			<h2>Saved notes</h2>
+			<p id="empty" class="empty" hidden>No notes yet.</p>
+			<ul id="notes"></ul>
+		</section>
+	</main>
+	<script src="/app.js"></script>
+</body>
+</html>
